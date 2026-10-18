@@ -54,7 +54,7 @@ ul.rules li{margin-bottom:6px}
 <div class="wrap">
   <header><picture><source srcset="../seal-dark.png" media="(prefers-color-scheme: dark)"><img src="../seal-light.png" alt=""></picture><strong style="font:500 15px var(--display);letter-spacing:.06em">GINGER &amp; GLEAM</strong></header>
   <h1>Morning search</h1>
-  <p class="sub">About ten minutes. Tap a search, reply to anyone looking for a cleaner, then move to the next.</p>
+  <p class="sub">About ten minutes. Tap a search, reply to anyone looking for a cleaner, then move to the next. Your daily links are further down.</p>
 
   <section>
     <p class="step">Step 1</p>
@@ -93,11 +93,22 @@ ul.rules li{margin-bottom:6px}
   </section>
 
   <section>
-    <p class="step">Then</p>
-    <h2>Answer the messages</h2>
+    <p class="step">Every day</p>
+    <h2>Your daily links</h2>
+    <p class="sub">Everything you manage, in one place.</p>
     <div class="list">
-      <a class="row" href="https://business.facebook.com/latest/inbox/all" target="_blank" rel="noopener"><span>Messenger inbox (Business Suite)</span><span>Open</span></a>
-      <a class="row" href="https://www.facebook.com/profile.php?id=61587592953067" target="_blank" rel="noopener"><span>Ginger &amp; Gleam Facebook Page</span><span>Open</span></a>
+      <a class="row" href="https://business.facebook.com/latest/inbox/all" target="_blank" rel="noopener"><span>Messenger inbox<br><small style="color:var(--muted)">Answer new leads</small></span><span>Open</span></a>
+      <a class="row" href="https://www.facebook.com/profile.php?id=61587592953067" target="_blank" rel="noopener"><span>Facebook Page<br><small style="color:var(--muted)">Comments, bio, photos</small></span><span>Open</span></a>
+      <a class="row" href="https://business.google.com/" target="_blank" rel="noopener"><span>Google Business Profile<br><small style="color:var(--muted)">Reviews, photos, hours (business Gmail)</small></span><span>Open</span></a>
+      <a class="row" href="https://www.google.com/search?q=Ginger+%26+Gleam+Hutto" target="_blank" rel="noopener"><span>See your Google listing<br><small style="color:var(--muted)">How customers see you</small></span><span>Open</span></a>
+      <a class="row" href="https://app.metricool.com/planner?blogId=7502602" target="_blank" rel="noopener"><span>Metricool planner<br><small style="color:var(--muted)">Schedule this week's posts</small></span><span>Open</span></a>
+      <a class="row" href="https://mail.google.com/" target="_blank" rel="noopener"><span>Business email<br><small style="color:var(--muted)">gingerandgleam@gmail.com</small></span><span>Open</span></a>
+      <a class="row" href="https://ginger-and-gleam.github.io/" target="_blank" rel="noopener"><span>Your website<br><small style="color:var(--muted)">ginger-and-gleam.github.io</small></span><span>Open</span></a>
+    </div>
+    <div class="reply" style="margin-top:14px">
+      <p style="margin:0 0 4px"><strong>Your Google review link</strong></p>
+      <p style="margin:0 0 12px;color:var(--muted);font-size:14px;word-break:break-all" id="reviewLink">https://g.page/r/CXGmc1KCXVTtEBM/review</p>
+      <button id="copyReview" type="button">Copy review link</button><span class="done" id="reviewCopied" aria-live="polite"></span>
     </div>
   </section>
 
@@ -122,6 +133,7 @@ function renderReply(){$('openers').innerHTML=openers.map((o,i)=>`<button type="
 $('openers').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;pick=+b.dataset.i;renderReply();$('copied').textContent='';});
 renderReply();
 $('copyBtn').addEventListener('click',async()=>{const t=$('replyText').textContent;try{await navigator.clipboard.writeText(t);}catch(_){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');}catch(__){}a.remove();}$('copied').textContent='Copied';pick=(pick+1)%openers.length;setTimeout(()=>{renderReply();},1200);});
+$('copyReview').addEventListener('click',async()=>{const t=$('reviewLink').textContent;try{await navigator.clipboard.writeText(t);}catch(_){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');}catch(__){}a.remove();}$('reviewCopied').textContent='Copied';setTimeout(()=>{$('reviewCopied').textContent='';},1500);});
 const KEY='gg-groups';
 function load(){try{return JSON.parse(localStorage.getItem(KEY)||'[]');}catch(_){return [];}}
 function save(g){try{localStorage.setItem(KEY,JSON.stringify(g));}catch(_){}}
