@@ -175,17 +175,19 @@ p+p{margin-top:1em}
 @media (max-width:1080px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 32px}}
 @media (max-width:640px){.steps{grid-template-columns:1fr;gap:36px}}
 
-/* The standard */
-.standard{padding-block:var(--section)}
-.standard-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:center}
-.standard-copy{grid-column:1/7}
-.standard-photo{grid-column:8/13;margin-right:var(--bleed)}
-.particulars{margin:48px 0 0;display:grid;gap:0}
-.particulars div{display:grid;grid-template-columns:8.5em 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--rule-dark)}
-.particulars dt{font:italic 400 19px/1.45 var(--serif);color:var(--copper)}
-.particulars dd{margin:0;color:var(--smoke)}
-@media (max-width:899px){.standard-grid{display:block}.standard-photo{margin:56px calc(-1 * var(--gutter)) 0}}
-@media (max-width:520px){.particulars div{grid-template-columns:1fr;gap:4px}}
+/* About the owner: a letter, set for reading. */
+.owner{padding-block:var(--section)}
+.owner-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start}
+.owner-photo{grid-column:1/6;position:sticky;top:104px;margin-left:var(--bleed)}
+.owner-letter{grid-column:7/13;max-width:36em}
+.owner-title{color:var(--copper);font-style:italic;margin-bottom:28px}
+.owner-letter p{color:var(--smoke);font-size:18px;line-height:1.7}
+.owner-letter p+p{margin-top:1.15em}
+.owner-letter .owner-lede{font:400 clamp(30px,3.3vw,44px)/1.14 var(--serif);color:var(--bone);letter-spacing:-.005em;margin-bottom:1.1em;text-wrap:balance}
+.owner-letter .owner-promise{font:400 clamp(24px,2.2vw,30px)/1.32 var(--serif);color:var(--bone);margin-top:1.6em;padding-left:24px;border-left:1px solid var(--copper)}
+.owner-letter .owner-close{font:italic 400 22px/1.4 var(--serif);color:var(--bone);margin-top:1.6em}
+.owner-seal{width:56px;height:56px;margin-top:36px;opacity:.9}
+@media (max-width:899px){.owner-grid{display:flex;flex-direction:column-reverse}.owner-photo{position:relative;top:auto;margin:64px calc(-1 * var(--gutter)) 0}.owner-letter p{font-size:17px}}
 
 /* Area and questions */
 .faq{padding-block:var(--section)}
