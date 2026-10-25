@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ginger-and-gleam.github.io/sitemap.xml
+Sitemap: https://gingerandgleam.com/sitemap.xml
