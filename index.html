@@ -2,178 +2,333 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ginger &amp; Gleam Cleaning Co. — Residential cleaning in Hutto, Round Rock, Pflugerville, and Georgetown</title>
-<meta name="description" content="Ginger & Gleam Cleaning Co. provides refined residential cleaning in Hutto, Round Rock, Pflugerville, and Georgetown, Texas. Weekly and biweekly home care, deep cleans, and move-in and move-out cleaning.">
-<link rel="icon" href="apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ginger &amp; Gleam Cleaning Co. | Luxury house cleaning in Hutto, Round Rock &amp; Georgetown, TX</title>
+<meta name="description" content="Luxury residential cleaning within thirty minutes of Hutto, Texas: weekly and biweekly home care, a First Visit deep detail, and move-in and move-out cleans for Round Rock, Georgetown, Pflugerville and north Austin. Message us for a price range the same day.">
+<link rel="canonical" href="https://ginger-and-gleam.github.io/">
+<meta name="theme-color" content="#1C1B1A">
+<link rel="icon" href="assets/seal-on-light.svg" type="image/svg+xml">
+<link rel="icon" href="apple-touch-icon.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta property="og:title" content="Ginger & Gleam Cleaning Co.">
-<meta property="og:description" content="Residential cleaning for homes that deserve a careful hand. Hutto · Round Rock · Pflugerville · Georgetown.">
-<meta property="og:image" content="seal-dark.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&display=swap">
-<style>
-/* Layout: a quiet single page. White paper, black ink, copper only where the hand touches. Generous margins, one column of reading width. */
-:root{
-  --paper:#FFFFFF; --ink:#1C1B1A; --soft:#F7F3EE; --line:#E6DED5; --muted:#6E655C;
-  --copper:#A9582F; --copper-light:#C68A5E;
-  --display:"Bodoni Moda",Didot,"Playfair Display",Georgia,serif;
-  --body:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ginger &amp; Gleam Cleaning Co.">
+<meta property="og:title" content="Your home, detailed by hand.">
+<meta property="og:description" content="Weekly and biweekly home care, the First Visit, and move-in and move-out cleans within thirty minutes of Hutto, Texas.">
+<meta property="og:url" content="https://ginger-and-gleam.github.io/">
+<meta property="og:image" content="https://ginger-and-gleam.github.io/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Your home, detailed by hand. A detailing brush at the base of a copper faucet.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/BodoniModa.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/InstrumentSans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://ginger-and-gleam.github.io/#business",
+  "name": "Ginger & Gleam Cleaning Co.",
+  "slogan": "Your home, detailed by hand.",
+  "description": "Luxury residential cleaning: weekly and biweekly home care, a First Visit deep detail, and move-in and move-out cleans.",
+  "url": "https://ginger-and-gleam.github.io/",
+  "email": "gingerandgleam@gmail.com",
+  "logo": "https://ginger-and-gleam.github.io/seal-light.png",
+  "image": "https://ginger-and-gleam.github.io/assets/og-image.jpg",
+  "address": {"@type": "PostalAddress", "addressLocality": "Hutto", "addressRegion": "TX", "postalCode": "78634", "addressCountry": "US"},
+  "areaServed": [
+    {"@type": "City", "name": "Hutto, Texas"},
+    {"@type": "City", "name": "Round Rock, Texas"},
+    {"@type": "City", "name": "Pflugerville, Texas"},
+    {"@type": "City", "name": "Georgetown, Texas"},
+    {"@type": "City", "name": "Taylor, Texas"},
+    {"@type": "City", "name": "Austin, Texas"}
+  ],
+  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00"}],
+  "paymentAccepted": "Venmo, Zelle, Cash",
+  "sameAs": ["https://www.facebook.com/people/Ginger-Gleam/61587592953067"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Home care",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "serviceType": "House cleaning", "name": "Weekly and biweekly home care"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "serviceType": "Deep cleaning", "name": "The First Visit"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "serviceType": "Move-in and move-out cleaning", "name": "Move-in and move-out"}}
+    ]
+  }
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
-a{color:inherit}
-.wrap{max-width:1040px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
-.narrow{max-width:640px}
-header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line);z-index:5}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand img{width:44px;height:44px}
-.brand span{font:500 18px var(--display);letter-spacing:.04em;white-space:nowrap}
-nav a{text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-left:22px}
-nav a:hover{color:var(--copper)}
-nav .cta{color:var(--copper);border:1px solid var(--copper);padding:9px 14px;border-radius:999px;white-space:nowrap}
-@media (max-width:640px){ nav a:not(.cta){display:none} nav .cta{margin-left:0;font-size:12px;padding:8px 12px} .brand span{font-size:16px} }
-.hero{padding-block:72px 64px;text-align:center}
-.hero img{width:220px;max-width:60vw;height:auto;margin-bottom:28px}
-h1{font:400 clamp(34px,5.4vw,56px)/1.12 var(--display);margin:0 auto 18px;max-width:20ch;text-wrap:balance;letter-spacing:.005em}
-.hero p{max-width:40ch;margin:0 auto 30px;color:var(--muted);font-size:18px}
-.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:15px 26px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.02em}
-.btn.copper{background:var(--copper)}
-.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
-.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);margin:0 0 10px;font-weight:600}
-h2{font:400 clamp(28px,3.6vw,38px)/1.18 var(--display);margin:0 0 14px;text-wrap:balance}
-h3{font:500 22px/1.25 var(--display);margin:0 0 6px}
-section{padding-block:64px;border-top:1px solid var(--line)}
-section.soft{background:var(--soft)}
-.lead{color:var(--muted);font-size:18px;max-width:58ch}
-.grid{display:grid;gap:28px;margin-top:36px}
-.g3{grid-template-columns:repeat(3,1fr)}
-.g2{grid-template-columns:1fr 1fr}
-@media (max-width:760px){ .g3,.g2{grid-template-columns:1fr} }
-.card p{margin:0;color:var(--muted);font-size:16px}
-.star{color:var(--copper);font-size:20px;line-height:1;display:block;margin-bottom:10px}
-.steps{counter-reset:s;display:grid;gap:22px;margin-top:30px}
-.step{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
-.step i{font:400 30px/1 var(--display);color:var(--copper);font-style:normal;padding-top:4px}
-.step p{margin:0;color:var(--muted)}
-.quote{font:italic 400 clamp(22px,3vw,30px)/1.35 var(--display);max-width:26ch;margin:0;text-wrap:balance}
-.areas{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.areas span{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;background:#fff}
-.notes{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px;max-width:60ch}
-.notes li{padding-left:22px;position:relative;color:var(--muted)}
-.notes li::before{content:"✦";position:absolute;left:0;color:var(--copper);font-size:12px;top:5px}
-.contact{text-align:center}
-.contact .big{font:400 clamp(30px,5vw,44px)/1.1 var(--display);margin:18px 0 6px;letter-spacing:.02em}
-.contact .big a{text-decoration:none}
-.contact small{color:var(--muted);display:block;margin-bottom:26px}
-footer{background:var(--ink);color:#C9C1B8;padding-block:48px}
-footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:24px;justify-content:space-between}
-footer img{width:84px;height:84px}
-footer p{margin:0;font-size:14px;line-height:1.7}
-footer a{color:var(--copper-light);text-decoration:none}
-.fine{font-size:12px;color:#8E857B}
-@media (prefers-reduced-motion:no-preference){ .hero img{animation:in .9s ease-out both} @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}} }
-</style>
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<header>
-  <div class="wrap">
-    <a class="brand" href="#top"><img src="seal-light.png" alt=""><span>GINGER &amp; GLEAM</span></a>
-    <nav>
+<header class="site-head" data-head>
+  <div class="frame head-row">
+    <a class="brand" href="#top" aria-label="Ginger &amp; Gleam, back to top">
+      <img src="assets/seal-on-dark.svg" alt="" width="40" height="40">
+      <span>Ginger &amp; Gleam</span>
+    </a>
+    <nav class="head-nav" aria-label="Main">
       <a href="#services">Services</a>
       <a href="#how">How it works</a>
-      <a href="#experience">The experience</a>
-      <a href="#areas">Areas</a>
-      <a class="cta" href="https://m.me/61587592953067" target="_blank" rel="noopener">Message us</a>
+      <a href="#questions">Questions</a>
+      <a class="head-cta" href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Message us</a>
     </nav>
   </div>
 </header>
 
-<main id="top">
+<main id="main">
 
-<div class="hero wrap">
-  <img src="seal-light.png" alt="Ginger &amp; Gleam Cleaning Co. seal">
-  <h1>Residential cleaning for homes that deserve a careful hand.</h1>
-  <p>The same careful hands, every visit. Serving Hutto, Round Rock, Pflugerville, Georgetown, and north Austin.</p>
-  <a class="btn copper" href="https://m.me/61587592953067" target="_blank" rel="noopener">Request a walk-through</a>
-</div>
-
-<section id="services">
-  <div class="wrap">
-    <p class="eyebrow">Services</p>
-    <h2>Three ways we care for a home.</h2>
-    <p class="lead">Every home starts with a walk-through and, for ongoing care, a First Visit that brings everything to baseline. After that, regular visits keep it there.</p>
-    <div class="grid g3">
-      <div class="card"><span class="star">✦</span><h3>Recurring care</h3><p>Weekly, every other week, or monthly. Kitchens, baths, floors, dusting, beds, and the small finishes that make a house feel settled when you walk in.</p></div>
-      <div class="card"><span class="star">✦</span><h3>The First Visit</h3><p>A top-to-bottom deep clean: baseboards, fans, vents, blinds, grout, and door frames. The start of ongoing care, or a seasonal reset on its own.</p></div>
-      <div class="card"><span class="star">✦</span><h3>Move-in and move-out</h3><p>An empty home, cleaned the way you'd want to find it: inside every cabinet, drawer, and closet, plus the dishwasher, microwave, and laundry machines. Oven and refrigerator interiors can be added at the walk-through. For closings, listings, and new keys.</p></div>
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="frame hero-grid">
+    <figure class="hero-photo">
+      <img src="assets/img/brush-1200.webp"
+           srcset="assets/img/brush-480.webp 480w, assets/img/brush-800.webp 800w, assets/img/brush-1200.webp 1200w, assets/img/brush-1600.webp 1600w"
+           sizes="(min-width: 900px) 46vw, 100vw" width="1600" height="1986"
+           alt="A natural-bristle detailing brush working along the base of a copper faucet on dark stone."
+           fetchpriority="high">
+    </figure>
+    <div class="hero-copy">
+      <h1 id="hero-title" class="hero-title"><span>Your home,</span> <span>detailed</span> <span>by hand.</span></h1>
+      <p class="hero-sub">Weekly and biweekly home care, a First Visit that brings the whole house back to baseline, and move-in and move-out cleans. Within about thirty minutes of Hutto.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Message us on Messenger</a>
+        <a class="quiet-link" href="mailto:gingerandgleam@gmail.com">or email gingerandgleam@gmail.com</a>
+      </div>
+      <p class="hero-note">A price range the same day, and a walk-through that week.</p>
     </div>
   </div>
 </section>
 
-<section id="how" class="soft">
-  <div class="wrap">
-    <p class="eyebrow">How it works</p>
-    <h2>Clear price. No guessing.</h2>
-    <div class="steps">
-      <div class="step"><i>1</i><div><h3>A fifteen-minute walk-through</h3><p>We come by, see the home, and ask a few questions: which lights you like on, what should never be moved, the surfaces that need care, how the dog feels about visitors.</p></div></div>
-      <div class="step"><i>2</i><div><h3>A written price, the same day</h3><p>One message with the First Visit price and the per-visit price for ongoing care. Add-ons are listed separately, so nothing is a surprise.</p></div></div>
-      <div class="step"><i>3</i><div><h3>Your First Visit</h3><p>The home comes down to baseline, including the places most cleaners skip: baseboards, door frames, ceiling fans, vents, and light switches. You walk in to a home that feels finished, not just tidied.</p></div></div>
-      <div class="step"><i>4</i><div><h3>Then, quietly, every visit after</h3><p>The same careful hands, the same standard, the same finishes. If you'd ever like something done differently, just say so; it's noted for every visit after.</p></div></div>
+<section class="idea paper" aria-labelledby="idea-title">
+  <div class="frame idea-grid">
+    <div class="idea-copy">
+      <h2 id="idea-title" class="statement">You already know what a proper detail looks like.</h2>
+      <p class="measure">Every panel, every edge, nothing rushed. The car in your garage gets a careful hand; the house around it deserves the same. We bring a detailer's standard indoors and work through the home room by room, by hand, with the right product for every surface.</p>
+    </div>
+    <figure class="idea-photo">
+      <img src="assets/img/fob-800.webp"
+           srcset="assets/img/fob-480.webp 480w, assets/img/fob-800.webp 800w, assets/img/fob-1200.webp 1200w"
+           sizes="(min-width: 900px) 30vw, 80vw" width="1600" height="1986" loading="lazy"
+           alt="A leather key fob beside a small copper dish on a polished walnut table.">
+    </figure>
+  </div>
+</section>
+
+<section class="inspect" aria-labelledby="inspect-title" data-inspect>
+  <div class="frame inspect-grid">
+    <figure class="inspect-photo">
+      <img src="assets/img/light-800.webp"
+           srcset="assets/img/light-480.webp 480w, assets/img/light-800.webp 800w, assets/img/light-1200.webp 1200w, assets/img/light-1600.webp 1600w"
+           sizes="(min-width: 900px) 38vw, 100vw" width="1600" height="1986" loading="lazy"
+           alt="A gloved hand holding an inspection light, its beam raking across a dark marble countertop.">
+    </figure>
+    <div class="inspect-copy">
+      <h2 id="inspect-title" class="section-title">The places most cleaners skip are where we start.</h2>
+      <p class="measure soft">Detailers check their work under a raking light, because it shows everything a quick wipe leaves behind. We hold every visit to that standard.</p>
+      <ul class="surfaces" data-surfaces>
+        <li>Baseboards</li>
+        <li>Door frames</li>
+        <li>Ceiling fans</li>
+        <li>Air vents</li>
+        <li>Light switches</li>
+        <li>Blinds</li>
+        <li>Grout lines</li>
+        <li>Faucet bases</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="experience">
-  <div class="wrap">
+<section class="services paper" id="services" aria-labelledby="services-title">
+  <div class="frame services-grid">
+    <div class="services-head">
+      <h2 id="services-title" class="section-title">How we care for a home.</h2>
+      <p class="soft">Every home begins with a short walk-through, so the price is written down before anything starts.</p>
+    </div>
+    <div class="service-list">
+      <article class="service">
+        <h3>Weekly and biweekly care</h3>
+        <p>The same careful hands on a set schedule. Kitchens, baths, floors, dusting, beds, and the small finishes that make a house feel settled when you walk in. Monthly visits on request.</p>
+      </article>
+      <article class="service">
+        <h3>The First Visit</h3>
+        <p>Think of it as paint correction for the house. A top-to-bottom detail that brings everything to baseline before regular care begins: baseboards, ceiling fans, vents, blinds, grout, and door frames. Most homes start here. It can also be booked on its own as a seasonal reset.</p>
+      </article>
+      <article class="service">
+        <h3>Move-in and move-out</h3>
+        <p>An empty home, cleaned the way you'd want to find it: inside every cabinet, drawer, and closet, plus the dishwasher, microwave, and laundry machines. For closings, listings, and new keys.</p>
+      </article>
+      <p class="addons"><span>Add-ons, quoted at the walk-through:</span> inside the oven, inside the refrigerator, interior windows, inside cabinets, laundry, linens, garage, and patio.</p>
+    </div>
+  </div>
+</section>
+
+<section class="season" aria-labelledby="season-title" data-season>
+  <h2 id="season-title" class="visually-hidden">Seasonal</h2>
+  <div class="frame season-grid">
+    <article class="season-item" data-from="2026-10-01" data-until="2026-12-18">
+      <figure>
+        <img src="assets/img/glass-800.webp"
+             srcset="assets/img/glass-480.webp 480w, assets/img/glass-800.webp 800w, assets/img/glass-1200.webp 1200w"
+             sizes="(min-width: 900px) 34vw, 100vw" width="1600" height="1986" loading="lazy"
+             alt="A hand polishing a crystal wine glass with a charcoal cloth at a candlelit holiday table.">
+      </figure>
+      <div class="season-copy">
+        <h3>The Holiday First Visit</h3>
+        <p>Before the guests arrive. The whole home brought back to baseline: baseboards, door frames, ceiling fans, vents, and grout, detailed by hand. Visits before Thanksgiving run through November 24, and holiday visits through December 18. Openings are limited each week.</p>
+        <a class="quiet-link on-dark" href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Ask about a holiday visit</a>
+      </div>
+    </article>
+    <article class="season-item" data-from="2026-11-20" data-until="2026-12-24" hidden>
+      <figure>
+        <img src="assets/img/gift-800.webp"
+             srcset="assets/img/gift-480.webp 480w, assets/img/gift-800.webp 800w, assets/img/gift-1200.webp 1200w"
+             sizes="(min-width: 900px) 34vw, 100vw" width="1600" height="1986" loading="lazy"
+             alt="A cream envelope closed with a copper wax seal and charcoal ribbon beside a detailing brush.">
+      </figure>
+      <div class="season-copy">
+        <h3>The First Visit, as a gift</h3>
+        <p>Give a home that feels finished. A First Visit gift certificate: the whole house detailed by hand, on a heavy printed card ready to give. Send us the recipient's city and roughly how big their home is.</p>
+        <a class="quiet-link on-dark" href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Ask about a gift certificate</a>
+      </div>
+    </article>
+    <article class="season-item" data-from="2027-01-01" data-until="2027-01-31" hidden>
+      <figure>
+        <img src="assets/img/floor-800.webp"
+             srcset="assets/img/floor-480.webp 480w, assets/img/floor-800.webp 800w, assets/img/floor-1200.webp 1200w"
+             sizes="(min-width: 900px) 34vw, 100vw" width="1600" height="1986" loading="lazy"
+             alt="Low winter sun across a polished oak floor, a folded charcoal towel on the bottom stair.">
+      </figure>
+      <div class="season-copy">
+        <h3>A new-year reset</h3>
+        <p>Start the year in a home that feels finished. A First Visit takes the house back to baseline after the holidays, and weekly or biweekly care keeps it there.</p>
+        <a class="quiet-link on-dark" href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Book a January walk-through</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="how paper" id="how" aria-labelledby="how-title">
+  <div class="frame">
+    <h2 id="how-title" class="section-title narrow-title">From your first message to every visit after.</h2>
+    <ol class="steps">
+      <li>
+        <h3>Send a message</h3>
+        <p>Tell us the city, roughly how big the home is, and how often you'd like care. We reply with a price range the same day.</p>
+      </li>
+      <li>
+        <h3>A fifteen-minute walk-through</h3>
+        <p>We see the home and ask a few questions: which lights you like on, what should never be moved, the surfaces that need care, how the dog feels about visitors.</p>
+      </li>
+      <li>
+        <h3>A written price, the same day</h3>
+        <p>One message with the First Visit price and the per-visit price for ongoing care. Add-ons are listed separately, so nothing is a surprise.</p>
+      </li>
+      <li>
+        <h3>Your First Visit</h3>
+        <p>The home comes down to baseline, including the places most cleaners skip. You walk in to a house that feels finished, not just tidied.</p>
+      </li>
+      <li>
+        <h3>Then, quietly, every visit after</h3>
+        <p>The same standard and the same finishes. If you'd ever like something done differently, just say so; it's noted for every visit after.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="standard" aria-labelledby="standard-title">
+  <div class="frame standard-grid">
+    <div class="standard-copy">
+      <h2 id="standard-title" class="section-title">The same careful hands, every visit.</h2>
+      <p class="measure">No rotating crews and no strangers with a key. Your preferences are remembered from one visit to the next, so you only have to say it once.</p>
+      <dl class="particulars">
+        <div><dt>Surfaces</dt><dd>Stone, wood, brass, and fine finishes are treated with products made for them.</dd></div>
+        <div><dt>Supplies</dt><dd>Everything is brought to the home. If you'd prefer we use yours, just say so.</dd></div>
+        <div><dt>Entry</dt><dd>You don't need to be home. Entry details are shared privately by text and never written down.</dd></div>
+        <div><dt>The finish</dt><dd>Lights, blinds, and thermostat are left exactly as you like them.</dd></div>
+      </dl>
+    </div>
+    <figure class="standard-photo">
+      <img src="assets/img/kit-800.webp"
+           srcset="assets/img/kit-480.webp 480w, assets/img/kit-800.webp 800w, assets/img/kit-1200.webp 1200w, assets/img/kit-1600.webp 1600w"
+           sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1986" loading="lazy"
+           alt="Wooden detailing brushes, folded charcoal microfiber towels, and a matte black spray bottle laid out on a soapstone counter.">
+    </figure>
+  </div>
+</section>
+
+<section class="faq paper" id="questions" aria-labelledby="faq-title">
+  <div class="frame faq-grid">
+    <div class="area">
+      <h2 class="section-title">Within about thirty minutes of Hutto.</h2>
+      <p class="measure">Round Rock, Pflugerville, Georgetown, Taylor, north Austin, and Hutto itself. For larger homes on a weekly or biweekly schedule a little further out, ask us.</p>
+      <p class="measure soft">Weekdays, nine to five, booked as far out as you need.</p>
+    </div>
+    <div class="questions">
+      <h2 id="faq-title" class="small-title">Good to know</h2>
+      <details>
+        <summary>Do I need to be home?</summary>
+        <p>No. Many clients are at work during their visit. Entry details are shared privately by text and never written down.</p>
+      </details>
+      <details>
+        <summary>Is the inside of the oven or refrigerator included?</summary>
+        <p>They're add-ons on every service, quoted at the walk-through. Move-outs include the dishwasher, microwave, and laundry machines.</p>
+      </details>
+      <details>
+        <summary>How is the price set?</summary>
+        <p>By the size of the home and how often you'd like care. We send a range the same day you message us, then confirm it in writing after the walk-through. Add-ons are listed separately.</p>
+      </details>
+      <details>
+        <summary>Why start with a First Visit?</summary>
+        <p>Regular care keeps a home at a standard; the First Visit sets it. Baseboards, vents, fans, and grout are brought back once, so every visit after can keep them there. If your home is already in excellent shape, we'll tell you at the walk-through.</p>
+      </details>
+      <details>
+        <summary>How do I pay?</summary>
+        <p>Venmo, Zelle, or cash. We send an invoice at the end of the day.</p>
+      </details>
+      <details>
+        <summary>What if I need to cancel?</summary>
+        <p>Let us know as early as you can. Same-day cancellations are $50, waived for a true emergency.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="frame contact-grid">
     <div>
-        <p class="eyebrow">The experience</p>
-        <h2>Cared for, not just cleaned.</h2>
-        <p class="lead">No rotating crews and no strangers with a key. Your home is looked after by the same careful hands each visit, and your preferences are remembered from one visit to the next, so you only have to say it once.</p>
-        <p class="lead" style="margin-top:14px">Stone, wood, brass, and fine finishes are treated with the right products. Lights, blinds, and thermostat are left exactly as you like them.</p>
+      <h2 id="contact-title" class="statement">Tell us about your home.</h2>
+      <p class="measure soft">The city, roughly how big it is, and how often you'd like care. We reply the same day.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Message us on Messenger</a>
+        <a class="quiet-link on-dark" href="mailto:gingerandgleam@gmail.com">or email gingerandgleam@gmail.com</a>
+      </div>
     </div>
-  </div>
-</section>
-
-<section id="areas" class="soft">
-  <div class="wrap">
-    <p class="eyebrow">Where we work</p>
-    <h2>Within about thirty minutes of Hutto.</h2>
-    <div class="areas">
-      <span>Hutto</span><span>Round Rock</span><span>Pflugerville</span><span>Georgetown</span><span>Taylor</span><span>North Austin</span>
-    </div>
-    <ul class="notes">
-      <li>Weekdays, 9 to 5, booked as far out as you need.</li>
-      <li>All supplies and equipment are provided, including products that are safe on stone and wood. If you'd prefer your own, just say so.</li>
-      <li>You don't need to be home. Entry details are shared privately and never written down.</li>
-    </ul>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div class="wrap narrow">
-    <p class="eyebrow">Get in touch</p>
-    <h2>A message is the easiest way to reach us.</h2>
-    <p class="lead" style="margin:0 auto 24px;text-align:center">Send a note on Facebook Messenger for a price range the same day and a walk-through that week.</p>
-    <a class="btn copper" href="https://m.me/61587592953067" target="_blank" rel="noopener">Message Ginger &amp; Gleam</a>
-    &nbsp;
-    <a class="btn ghost" href="https://www.facebook.com/people/Ginger-Gleam/61587592953067" target="_blank" rel="noopener">Visit the Facebook page</a>
-    <small style="margin-top:26px"><a href="mailto:gingerandgleam@gmail.com">gingerandgleam@gmail.com</a></small>
+    <figure class="qr">
+      <img src="assets/messenger-qr.svg" width="168" height="168" alt="QR code that opens a Messenger conversation with Ginger &amp; Gleam.">
+      <figcaption>Scan with your phone to message us.</figcaption>
+    </figure>
   </div>
 </section>
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <img src="seal-dark.png" alt="">
-    <p>Ginger &amp; Gleam Cleaning Co.<br>Hutto, Texas<br><a href="https://m.me/61587592953067" target="_blank" rel="noopener">Message on Facebook</a> · <a href="mailto:gingerandgleam@gmail.com">gingerandgleam@gmail.com</a></p>
-    <p class="fine">© 2026 Ginger &amp; Gleam Cleaning Co.</p>
+<footer class="site-foot">
+  <div class="frame foot-row">
+    <img src="assets/seal-on-dark.svg" alt="" width="72" height="72">
+    <p class="foot-name">Ginger &amp; Gleam Cleaning Co.<br><span>Hutto, Texas</span></p>
+    <p class="foot-links">
+      <a href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Messenger</a>
+      <a href="https://www.facebook.com/people/Ginger-Gleam/61587592953067" target="_blank" rel="noopener">Facebook</a>
+      <a href="mailto:gingerandgleam@gmail.com">Email</a>
+      <a href="https://g.page/r/CXGmc1KCXVTtEBM/review" target="_blank" rel="noopener">Leave a Google review</a>
+    </p>
+    <p class="foot-fine">© <span data-year>2026</span> Ginger &amp; Gleam Cleaning Co.</p>
   </div>
 </footer>
 
+<script src="assets/site.js" defer></script>
 </body>
 </html>
