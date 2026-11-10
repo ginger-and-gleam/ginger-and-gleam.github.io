@@ -20,7 +20,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Your home, detailed by hand. A detailing brush at the base of a copper faucet.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="assets/fonts/BodoniModa.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/BodoniModaDisplay.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/BodoniModaText.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/InstrumentSans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
 <script>document.documentElement.classList.add('js')</script>
@@ -74,7 +75,7 @@
       <a href="#how">How it works</a>
       <a href="#about">About</a>
       <a href="#questions">Questions</a>
-      <a class="head-cta" href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Message us</a>
+      <a class="head-cta" href="#request" aria-label="Request a walk-through"><span class="wide-only">Request a </span>walk-through</a>
     </nav>
   </div>
 </header>
@@ -94,10 +95,13 @@
       <h1 id="hero-title" class="hero-title"><span>Your home,</span> <span>detailed</span> <span>by hand.</span></h1>
       <p class="hero-sub">Weekly and biweekly home care, a First Visit that brings the whole house back to baseline, and move-in and move-out cleans. Within about thirty minutes of Hutto.</p>
       <div class="hero-actions">
-        <a class="button" href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Message us on Messenger</a>
-        <a class="quiet-link" href="mailto:gingerandgleam@gmail.com">or email gingerandgleam@gmail.com</a>
+        <a class="button" href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Message us</a>
+        <a class="button button-line" href="#request">Request a walk-through</a>
       </div>
       <p class="hero-note">A fifteen-minute walk-through, and your quote in writing the same day.</p>
+      <ul class="hero-places" aria-label="Where we work">
+        <li>Hutto</li><li>Round Rock</li><li>Pflugerville</li><li>Georgetown</li><li>North Austin</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -105,10 +109,11 @@
 <section class="idea paper" aria-labelledby="idea-title">
   <div class="frame idea-grid">
     <div class="idea-copy">
+      <p class="label">The standard</p>
       <h2 id="idea-title" class="statement">You already know what a proper detail looks like.</h2>
       <p class="measure">Every panel, every edge, nothing rushed. The car in your garage gets a careful hand; the house around it deserves the same. We bring a detailer's standard indoors and work through the home room by room, by hand, with the right product for every surface.</p>
     </div>
-    <figure class="idea-photo">
+    <figure class="idea-photo matted">
       <img src="assets/img/fob-800.webp"
            srcset="assets/img/fob-480.webp 480w, assets/img/fob-800.webp 800w, assets/img/fob-1200.webp 1200w"
            sizes="(min-width: 900px) 30vw, 80vw" width="1600" height="1986" loading="lazy"
@@ -119,13 +124,14 @@
 
 <section class="inspect" aria-labelledby="inspect-title" data-inspect>
   <div class="frame inspect-grid">
-    <figure class="inspect-photo">
+    <figure class="inspect-photo matted">
       <img src="assets/img/inspect-800.webp"
            srcset="assets/img/inspect-480.webp 480w, assets/img/inspect-800.webp 800w, assets/img/inspect-1200.webp 1200w, assets/img/inspect-1600.webp 1600w"
            sizes="(min-width: 900px) 38vw, 100vw" width="1600" height="1986" loading="lazy"
            alt="A woman's gloved hand holding an inspection light, its beam raking across a white marble countertop.">
     </figure>
     <div class="inspect-copy">
+      <p class="label">Under the light</p>
       <h2 id="inspect-title" class="section-title">The places most cleaners skip are where we start.</h2>
       <p class="measure soft">Detailers check their work under a raking light, because it shows everything a quick wipe leaves behind. We hold every visit to that standard.</p>
       <ul class="surfaces" data-surfaces>
@@ -145,6 +151,7 @@
 <section class="services paper" id="services" aria-labelledby="services-title">
   <div class="frame services-grid">
     <div class="services-head">
+      <p class="label">Services</p>
       <h2 id="services-title" class="section-title">How we care for a home.</h2>
       <p class="soft">Every home begins with a short walk-through, so the price is written down before anything starts.</p>
     </div>
@@ -170,7 +177,7 @@
   <h2 id="season-title" class="visually-hidden">Seasonal</h2>
   <div class="frame season-grid">
     <article class="season-item" data-from="2026-10-01" data-until="2026-12-18">
-      <figure>
+      <figure class="matted">
         <img src="assets/img/holiday-800.webp"
              srcset="assets/img/holiday-480.webp 480w, assets/img/holiday-800.webp 800w, assets/img/holiday-1200.webp 1200w"
              sizes="(min-width: 900px) 34vw, 100vw" width="1600" height="1986" loading="lazy"
@@ -211,8 +218,17 @@
   </div>
 </section>
 
+<section class="promise" aria-label="Our promise">
+  <div class="frame">
+    <img src="assets/seal-on-dark.svg" alt="" width="64" height="64" loading="lazy">
+    <p>The same careful hands, <em>every visit.</em></p>
+    <p class="promise-sub">One person learns your home, remembers how you like it kept, and holds it to the same standard week after week.</p>
+  </div>
+</section>
+
 <section class="how paper" id="how" aria-labelledby="how-title">
   <div class="frame">
+    <p class="label">How it works</p>
     <h2 id="how-title" class="section-title narrow-title">From your first message to every visit after.</h2>
     <ol class="steps">
       <li>
@@ -241,14 +257,14 @@
 
 <section class="owner" id="about" aria-labelledby="owner-title">
   <div class="frame owner-grid">
-    <figure class="owner-photo">
+    <figure class="owner-photo matted">
       <img src="assets/img/owner-800.webp"
            srcset="assets/img/owner-480.webp 480w, assets/img/owner-800.webp 800w, assets/img/owner-1200.webp 1200w, assets/img/owner-1600.webp 1600w"
            sizes="(min-width: 900px) 38vw, 100vw" width="1600" height="1986" loading="lazy"
            alt="A woman's hands smoothing a folded charcoal microfiber towel on a soapstone counter, a wooden detailing brush beside it.">
     </figure>
     <div class="owner-letter">
-      <h2 id="owner-title" class="small-title owner-title">About the owner</h2>
+      <h2 id="owner-title" class="label">About the owner</h2>
       <p class="owner-lede">I started Ginger &amp; Gleam because I knew there was a better way to clean a home.</p>
       <p>Before opening my own business, I spent years in the industry as a cleaner, a trainer, and in quality control, and I learned how the operations side works as well. I’ve trained other cleaners, inspected their work, and helped shape how jobs get done, so I know exactly what a high standard looks like and what it takes to meet it. But my standards were always higher than what the schedule allowed. Larger cleaning companies run on tight windows and rotating crews, and there was never room to do the work the way I believed it should be done. I wanted to give homes the attention they deserved, so I built a business around that.</p>
       <p>You’ll never meet a stranger at your door. Every visit, it’s the same person in your home, and I learn it the way you do. I know which surfaces need a gentler product, which cabinet you’d rather I leave alone, and that the vase in the hallway was a gift. I know your dog’s name, and which corner of the couch is his.</p>
@@ -263,6 +279,7 @@
 <section class="faq paper" id="questions" aria-labelledby="faq-title">
   <div class="frame faq-grid">
     <div class="area">
+      <p class="label">Where we work</p>
       <h2 class="section-title">Within about thirty minutes of Hutto.</h2>
       <p class="measure">Round Rock, Pflugerville, Georgetown, Taylor, north Austin, and Hutto itself. For larger homes on a weekly or biweekly schedule a little further out, ask us.</p>
       <p class="measure soft">Weekdays, nine to five, booked as far out as you need.</p>
@@ -308,6 +325,7 @@
 <section class="contact" id="contact" aria-labelledby="contact-title">
   <div class="frame contact-grid">
     <div>
+      <p class="label">Begin</p>
       <h2 id="contact-title" class="statement">Tell us about your home.</h2>
       <p class="measure soft">The city, roughly how big it is, and how often you'd like care. We reply the same day.</p>
       <div class="hero-actions">
@@ -379,6 +397,8 @@
       <a href="https://m.me/61587592953067?ref=website" target="_blank" rel="noopener">Messenger</a>
       <a href="https://www.facebook.com/people/Ginger-Gleam/61587592953067" target="_blank" rel="noopener">Facebook</a>
       <a href="mailto:gingerandgleam@gmail.com">Email</a>
+      <a href="guide/">Home Care Guide</a>
+      <a href="privacy/">Privacy</a>
       <a href="https://g.page/r/CXGmc1KCXVTtEBM/review" target="_blank" rel="noopener">Leave a Google review</a>
     </p>
     <p class="foot-fine">© <span data-year>2026</span> Ginger &amp; Gleam Cleaning Co.</p>
