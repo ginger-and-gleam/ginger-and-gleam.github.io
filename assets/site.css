@@ -285,3 +285,4 @@ details p{color:var(--stone);padding:0 40px 24px 0;max-width:36em}
 @media (max-width:899px){.label{margin-bottom:18px}.matted::after{inset:10px}}
 @media (max-width:520px){.hero-actions .button{width:100%;justify-content:space-between}.hero-places{font-size:11.5px;letter-spacing:.16em}.hero-places li:not(:last-child)::after{margin:0 10px 2px}}
 @media (prefers-reduced-motion:reduce){.button::before{display:none}}
+.request ::placeholder{color:var(--smoke);opacity:.75}
